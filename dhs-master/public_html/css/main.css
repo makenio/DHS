@@ -1,0 +1,21 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.main-title{
+    font-family: 'Poiret One', cursive;
+}
+
+.main-text{
+    font-family: 'Dosis', sans-serif;
+}
+
+.status-custom{
+    border-radius: 0;
+}
+*{
+   border-radius: 0 !important;
+}

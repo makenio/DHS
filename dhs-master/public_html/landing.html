@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+    Es la landing page del usuario que hace login exitosamente.
+    Contiene el menu, la status bar y un newsfeed.
+-->
+<html>
+    <head>
+        <title>MENU</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+   		<link rel="stylesheet" href="css/font-awesome-animation.css" />
+        
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Poiret+One" rel="stylesheet">
+        <link type="text/css" href="style.css" rel="stylesheet" /> 
+        <link rel="stylesheet" href="css/AdminLTE.min.css">
+        <link rel="stylesheet" href="css/skins/skin-blue.min.css">
+        <link type="text/css" href="css/pre-styles.css" rel="stylesheet" />
+        <link type="text/css" href="css/skin-blue.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/tef-clouders-skin-blue.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/vendor/jquery-1.11.2.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/app.min.js"></script>
+        
+        <script>
+			$( document ).ready(function() {
+			  
+			  $("#usuarios").click(function(){
+				  $("#cargar").load("usuarios.asp");
+				  });
+				  
+			  $("#almacen").click(function(){
+				  $("#cargar").load("racks.asp");
+				  });	  
+			  
+			});
+	
+		</script>
+        
+    </head>
+    <body>
+<!-- NAVBAR -->
+        <nav class="navbar navbar-inverse status-custom">
+                <a class="navbar-brand" href="#">DH SYSTEMS</a>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="label label-danger"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="label label-success"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="label label-warning"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="label label-success"></span></a>
+                    </li>
+                </ul>
+        </nav>
+     <!-- FIN NAVBAR -->
+     
+     <!-- CONTAINER MENU Y APP -->
+        <div class="container-fluid">
+                <div class="row">
+                    <!-- MENU -->
+                    <div class="panel panel-default col-md-3 col-xs-12">
+                        <div class="row">
+                            <span class="col-md-12 well well-sm">SETTINGS<span class="glyphicon glyphicon-cog pull-right"></span></span>
+                            <div class="col-md-6 col-xs-6 text-center"><a href="#" id="almacen">Almac&eacute;n</a></div>
+                            <div class="col-md-6 col-xs-6 text-center">Sistema</div>
+                        </div>
+                        <div class="row">
+                            <span class="col-md-12 well well-sm">ABM<span class="glyphicon glyphicon-tasks pull-right"></span></span>
+                            <div class="col-md-6 col-xs-6 text-center"><a href="#" id="usuarios">ABM Usuarios</a></div>
+                            <div class="col-md-6 col-xs-6 text-center">ABM Guias</div>
+                        </div>
+                        <div class="row">
+                            <span class="col-md-12 well well-sm">BANDEJAS<span class="glyphicon glyphicon-inbox pull-right"></span></span>
+                            <div class="col-md-6 col-xs-6 text-center">Consultar espacio</div>
+                            <div class="col-md-6 col-xs-6 text-center">Nuevo espacio</div>
+                        </div>
+                        <div class="row">
+                            <span class="col-md-12 well well-sm">INTERACCION<span class="glyphicon glyphicon-retweet pull-right"></span></span>
+                            <div class="col-md-6 col-xs-6 text-center">Picking</div>
+                            <div class="col-md-6 col-xs-6 text-center">Repo</div>
+                        </div>
+                    </div>
+                    <!-- FIN MENU -->
+                    
+                    <!-- DIV DE CARGA DE APPS POR AJAX -->
+                    <div class="panel panel-default col-md-9 col-xs-12">
+                        <div id="cargar">
+               			</div> 
+                    </div>
+                    <!-- FIN DIV DE CARGA DE APPS POR AJAX -->
+                </div>
+            </div>
+       <!-- FIN CONTAINER MENU Y APP -->
+        
+        
+        
+        
+    </body>
+</html>

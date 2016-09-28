@@ -1,0 +1,546 @@
+/* Pantallas chicas */
+
+.logoTasa
+{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+/* Pantallas grandes */
+
+@media (min-width: 768px) {
+    .logoTasa
+    {
+    margin-top: 15px;
+    }
+
+    .TituloSeccionHeader
+    {
+    position: absolute;
+    right: 45px;
+    top: -7px;
+    }
+
+}
+
+.TituloSeccionHeader
+{
+position: absolute;
+right: 50px;
+margin-top: 17px;
+}
+
+/* Botonera Principal Corporativa */
+
+.botoneraPrincipal li {border-right:solid 1px #E7E7E7;}
+.botoneraPrincipal li a {text-align: left;margin-left: 0px;padding:5px 10px 5px 10px}
+.botoneraPrincipal li:last-child {border-right:none;}
+
+/* Fin Botonera Principal Corporativa */
+
+/* Boton Desplegar menu en mobile */
+#boton_menu_mobile{top:-12px;}
+/* Fin Boton Desplegar menu en mobile */
+
+ol {counter-reset: item;}
+ol li {display: block;}
+ol li:before {content: counter(item) ". "; counter-increment: item; font-weight: bold;}
+
+.sombra {text-shadow: 2px 1px 2px rgba(150, 150, 150, 0.94);}
+.izquierda {margin-left:-20px;}
+
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+.barraDeMarca{
+    height:27px;
+}
+
+.larguero{
+    /*margin-top:1px;*/
+    height:25px;
+    background-image: url('../images/tef-crossbar.png');
+    background-repeat: no-repeat;
+}
+
+.logoClouders{margin-top: -5px;}
+
+.OverItemBotonera a{
+    border-bottom: solid 3px #FFFFFF;
+    border-right: solid 1px #E7E7E7;
+}
+
+.OverItemBotonera a:last-child{
+    border-bottom: solid 3px #FFFFFF;
+    border-right: solid 1px #FFFFFF;
+}
+
+.OverItemBotonera a:last-child:hover{
+    border-bottom: solid 3px #FFFFFF;
+    border-right: solid 1px #FFFFFF;
+}
+
+.OverItemBotonera a ul li{
+    border-bottom: solid 3px #FFFFFF;
+    border-right: solid 1px #E7E7E7;
+}
+
+.OverItemBotonera button{
+    border-bottom: solid 3px #FFFFFF;
+}
+
+.OverItemBotonera a:hover{
+    border-bottom: solid 3px #00C6D7;
+}
+
+.OverItemBotonera a.activo{
+    border-bottom: solid 3px #00C6D7;
+}
+
+.OverItemBotonera button:hover{
+    border-bottom: solid 3px #00C6D7;
+}
+
+.OverItemBotonera a li a:hover{
+    background-color: #00C6D7;
+    color: #003245;
+}
+
+
+
+/* Colores Corporativos */
+
+.magenta
+{
+    color: #990099;
+}
+
+.naranja
+{
+    color: #FF6633;
+}
+
+.amarillo
+{
+    color: #FFFF00;
+}
+
+.verde
+{
+    color: #00FF99;
+}
+
+.blanco
+{
+    color: #FFFFFF;
+}
+
+.negro
+{
+    color: #000000;
+}
+
+.gris
+{
+    color: #777777;
+}
+
+.gris2
+{
+    color: #AAAAAA;
+}
+
+/* Clases blue tasa (color de fuente) */
+
+.blue10
+{
+    color: #003245;
+}
+
+.blue09
+{
+    color: #004356;
+}
+
+.blue08
+{
+    color: #005466;
+}
+
+.blue07
+{
+    color: #006476;
+}
+
+.blue06
+{
+    color: #007486;
+}
+
+.blue05
+{
+    color: #008597;
+}
+
+.blue04
+{
+    color: #0095A7;
+}
+
+.blue03
+{
+    color: #00A5B7;
+}
+
+.blue02
+{
+    color: #00B6C7;
+}
+
+.blue01
+{
+    color: #00C6D7;
+}
+
+/* Clases blue tasa (color de fondo) */
+
+.bg-blue10
+{
+    background-color: #003245;
+}
+
+.bg-blue09
+{
+    background-color: #004356;
+}
+
+.bg-blue08
+{
+    background-color: #005466;
+}
+
+.bg-blue07
+{
+    background-color: #006476;
+}
+
+.bg-blue06
+{
+    background-color: #007486;
+}
+
+.bg-blue05
+{
+    background-color: #008597;
+}
+
+.bg-blue04
+{
+    background-color: #0095A7;
+}
+
+.bg-blue03
+{
+    background-color: #00A5B7;
+}
+
+.bg-blue02
+{
+    background-color: #00B6C7;
+}
+
+.bg-blue01
+{
+    background-color: #00C6D7;
+}
+
+/* Backgrounds colores tasa alternativos */
+
+.bg-magenta
+{
+    background-color: #990099;
+}
+
+.bg-naranja
+{
+    background-color: #FF6633;
+}
+
+.bg-amarillo
+{
+    background-color: #FFFF00;
+}
+
+.bg-verde
+{
+    background-color: #00FF99;
+}
+
+.bg-blanco
+{
+    background-color: #FFFFFF;
+}
+
+.bg-negro
+{
+    background-color: #000000;
+}
+
+/* Links */
+
+.linkOscuro{color: #0086C3;}
+.linkClaro{color: #00BFD6;}
+
+/* Fin Colores Corporativos */
+
+/* Fondos Corporativos */
+
+
+
+
+.imgBlueLightTexturado
+{
+    background: url("../images/BlueLight_backgrounds_textured.jpg") no-repeat top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* Fin Fondos Corporativos */
+
+.destacadoRound {
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+
+.destacadoRound h2{
+  margin-top: 10px;
+}
+
+.destacadoRound .pull-left {
+  margin-right: 25px;
+}
+
+.destacadoRound img{
+  font-size: 48px;
+  margin: 3px;
+  border-radius: 100%;
+  line-height: 110px;
+  text-align:center;
+  background: #ffffff;
+  color: #2867b5;
+  border: 10px solid #ffffff;
+  box-shadow: inset 0 0 0 5px #f2f2f2;
+  -webkit-box-shadow: inset 0 0 0 5px #f2f2f2;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+  float: left;
+  margin-right: 25px;
+}
+
+.destacadoRound img:hover {
+  background: #2A67b5;
+  color: #fff;
+  box-shadow: inset 0 0 0 5px #2867b5;
+  -webkit-box-shadow: inset 0 0 0 5px #2867b5;
+  border: 10px solid #2867b5;
+}
+
+.destacadoRound i{
+  font-size: 48px;
+  margin: 3px;
+  border-radius: 100%;
+  line-height: 110px;
+  text-align:center;
+  background: #ffffff;
+  color: #2867b5;
+  border: 10px solid #ffffff;
+  box-shadow: inset 0 0 0 5px #f2f2f2;
+  -webkit-box-shadow: inset 0 0 0 5px #f2f2f2;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+  float: left;
+  margin-right: 25px;
+}
+
+.destacadoRound i:hover {
+  background: #2A67b5;
+  color: #fff;
+  box-shadow: inset 0 0 0 5px #2867b5;
+  -webkit-box-shadow: inset 0 0 0 5px #2867b5;
+  border: 10px solid #2867b5;
+}
+
+.gigante
+{
+    font-size:148px;
+}
+
+
+
+.BotoneraPrueba
+{
+    position: relative;
+    top:74px;
+    width: 100%;
+    height: 38px;
+    background-color: #FFF;
+}
+
+.subir
+{
+margin-top:-200px;}
+
+.interlineado2 {
+    letter-spacing: -2px;
+}
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+
+/* Titulos */
+/* para pantallas chicas */
+
+.titulo
+{
+    font-size: 25px;
+}
+
+.titulo2
+{
+    font-size: 15px;
+}
+
+.titulo3
+{
+    font-size: 16px;
+}
+
+.titulo4
+{
+    font-size: 11px;
+}
+
+.TituloPrincipalPrime
+{
+    font-size:35px;
+}
+
+.fondoTransparente
+{
+    background-color: none;
+}
+
+/* Pantallas grandes */
+
+@media (min-width: 768px) {
+    .titulo
+    {
+        font-size: 35px;
+    }
+
+    .titulo2
+    {
+        font-size: 21px;
+    }
+
+    .titulo3
+    {
+        font-size: 16px;
+    }
+
+    .titulo4
+    {
+        font-size: 11px;
+    }
+
+    .TituloPrincipalPrime
+    {
+        font-size:48px;
+    }
+
+    .fondoTransparente
+    {
+        background-color: rgba(0, 84, 102, 0.5);
+    }
+
+}
+
+input.transparente{
+    background-color:transparent !important;
+    background-color:rgba(0,0,0,0) !important;
+    border:none !important;
+}
+
+input.dosDigitos{
+width:40px;
+}
+
+.btnWrap { white-space: normal; }
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+/*ANIMACIONES*/
+
+.animado
+{
+    transition:all 0.3s ease;
+}
+.fadeFx
+{
+    opacity:1;
+}
+.fadeFx:hover
+{
+    opacity:0.7;
+}
+
+.achicar:hover
+{
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.agrandar:hover
+{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.rotarIzq:hover
+{
+    -webkit-transform: rotateZ(-5deg);
+    -ms-transform: rotateZ(-5deg);
+    transform: rotateZ(-5deg);
+}
+
+.rotarDer:hover
+{
+    -webkit-transform: rotateZ(+5deg);
+    -ms-transform: rotateZ(+5deg);
+    transform: rotateZ(+5deg);
+}
+
+.borde:hover
+{
+    box-shadow: inset 0 0 0 25px #777777;
+}

@@ -1,0 +1,38 @@
+
+.skin-blue .main-header .navbar {
+    background-image:url("../images/header.jpg");
+    background-repeat: no-repeat;
+    height: 74px;background-size: 100% 100%;
+ }
+
+.skin-blue .main-header li.user-header {
+    background-image:url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ }
+
+.skin-blue .content-header {
+    background: transparent;
+    margin-top:20px;
+ }
+
+@media (min-width: 768px) {
+    .row-centered {
+        text-align:center;
+    }
+    .col-centered {
+        display:inline-block;
+        float:none;
+        text-align:left;
+        margin-right:-4px;
+    }
+}
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    float:none;
+    text-align:left;
+    margin-right:-4px;
+}

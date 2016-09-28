@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+#logon {
+	text-align:left;
+	margin: 15px;
+	background-color:#BBBBBB
+}
+
+#logon label{
+	color:black;
+}
+
+#registrarse {
+	color:black;
+	text-align:left;
+}
+
+.main-footer{ background-color:#E37800}
+
+#buscador1 {
+	position:relative;
+	font-size:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	width:80%;
+	}
+
+.text {border: 1px solid #CCC;}	
+
+.borde {
+	border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+	}
+	
+#CargoUSuarios{
+	overflow: auto;
+	-webkit-overflow-scrolling: touch
+	}	
+
+.tabla {
+	font-size:12px !important;
+	}
+.tabla th:last-child {
+	width: 100px;
+	}	
