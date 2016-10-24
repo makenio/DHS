@@ -31,8 +31,11 @@ $.makeForm = function (mydata,titulo,cd_objeto) {
 					TableRow += "<label for=" + key + ">" + key + ": </label>";
 					TableRow += "<input type='"+tipo+"' name='" + key + "' id='" + key + "' value='" + val + "' class='form-control'>";
                 });
-                TableRow += "<input type='hidden' name='cd_objeto' id='cd_objeto' value='"+cd_objeto+"'><input type='hidden' name='accion' id='accion' value='"+titulo+"'></input><br><button id='Guardar' type='submit' class='btn btn-default'><i class=' fa fa-floppy-o'></button>";
+                TableRow += "<input type='hidden' name='cd_objeto' id='cd_objeto' value='"+cd_objeto+"'><input type='hidden' name='accion' id='accion' value='"+titulo+"'></div></div></div>"
+				TableRow +="</div>"
+				
                 $(table).append(TableRow);
             });
+			
             return ($(table));
         };

@@ -28,6 +28,26 @@
 	response.write msj
  end if
  
+ 
+ if request("accion")="AltaGuia" then
+ 	msj=Conex.Execute("Proto..sp_abm_guia'"& request("cd_objeto") &"','"& request("accion") &"','"& request("barcode") &"','"& request("guiadesc") &"','"& request("guiaancho") &"','"& request("guiaprof") &"','"& request("guiaalto") &"'")("MSG")
+	
+	response.write msj
+ end if
+ 
+  if request("accion")="borrarGuia" then
+  	hasta=request("qguias")
+	a=0
+	msj=1
+	for a=0 to hasta
+ 		submsj=Conex.Execute("Proto..sp_abm_guia'"& request("cd_guia") &"','"& request("accion") &"','"& request("guiabarcode"+CStr(a)) &"'")("MSG")
+		if submsj <> 1 then
+			msj=0
+		end if
+	next
+	
+	response.write msj
+ end if
  conex.Close 
 %>
 

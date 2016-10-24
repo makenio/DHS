@@ -3,8 +3,7 @@
     Es la landing page del usuario que hace login exitosamente.
     Contiene el menu, la status bar y un newsfeed.
 -->
-<html>
-    <head>
+<html><head>
         <title>MENU</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,16 +15,37 @@
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis|Poiret+One" rel="stylesheet">
         <link type="text/css" href="style.css" rel="stylesheet" /> 
-        <link rel="stylesheet" href="css/AdminLTE.min.css">
+      <!--  <link rel="stylesheet" href="css/AdminLTE.min.css"> -->
         <link rel="stylesheet" href="css/skins/skin-blue.min.css">
         <link type="text/css" href="css/pre-styles.css" rel="stylesheet" />
         <link type="text/css" href="css/skin-blue.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/tef-clouders-skin-blue.css">
-
+		
+        <style>
+        .bg-gray {
+				color: #000;
+				background-color: #d2d6de !important;
+			}
+		body {
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				font-family: 'Verdana';
+				font-weight: 200;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+		.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+				border: 1px solid #f4f4f4;
+			}	
+		.table-bordered {
+				border: 1px solid #f4f4f4;
+			}
+        </style>
+        
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="js/vendor/jquery-1.11.2.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/app.min.js"></script>
+      	<script src="js/app.min.js"></script>
         
         <script>
 			$( document ).ready(function() {
@@ -36,8 +56,15 @@
 				  
 			  $("#almacen").click(function(){
 				  $("#cargar").load("racks.asp");
-				  });	  
+				  });
+				  
+			  $("#repo").click(function(){
+				  $("#cargar").load("guia.asp");
+				  });	  	  
 			  
+			  $("#picking").click(function(){
+				  $("#cargar").load("picking.asp");
+				  });	
 			});
 	
 		</script>
@@ -86,8 +113,8 @@
                         </div>
                         <div class="row">
                             <span class="col-md-12 well well-sm">INTERACCION<span class="glyphicon glyphicon-retweet pull-right"></span></span>
-                            <div class="col-md-6 col-xs-6 text-center">Picking</div>
-                            <div class="col-md-6 col-xs-6 text-center">Repo</div>
+                            <div class="col-md-6 col-xs-6 text-center"><a href="#" id="picking">Picking</a></div>
+                            <div class="col-md-6 col-xs-6 text-center"><a href="#" id="repo">Repo</a></div>
                         </div>
                     </div>
                     <!-- FIN MENU -->

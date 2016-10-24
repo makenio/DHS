@@ -30,7 +30,14 @@ $( document ).ready(function() {
 					var mydata = eval(data);
 					var table = $.makeForm(mydata,'Editusuario',cd_usuario);
 					$(table).appendTo("#AMUSuarios");
-					$("#Idioma").html('<select name="Idioma" id="Idioma" style="width:98%; height: 38px;" class="borde text ui-widget-content ui-corner-all"><option>Castellano</option><option>Portugues</option></select>')
+					
+					var TableRow = "<div class='row'><div class='col-md-6'><button type='submit' class='col-md-4 col-md-offset-1 btn btn-default pull-right'><span class='glyphicon glyphicon-ok-circle' id='Guardar'>ACEPTAR</span></button><span class='Cancelar col-md-4 btn btn-default pull-right'><span class='glyphicon glyphicon-remove-circle'>CANCELAR</span></span></div>";
+					
+					$(TableRow).appendTo("#AMUSuarios");
+					
+					$(".Cancelar").click(function(){
+						$("#AMUSuarios").html("");
+						});
 				});	
 				
 			});
@@ -62,9 +69,18 @@ $( document ).ready(function() {
 				var mydata = eval(data);
 				var table = $.makeForm(mydata,'Altausuario',0);
 				$(table).appendTo("#AMUSuarios");
+				
+				var TableRow = "<div class='row'><div class='col-md-6'><button type='submit' class='col-md-4 col-md-offset-1 btn btn-default pull-right'><span class='glyphicon glyphicon-ok-circle' id='Guardar'>ACEPTAR</span></button><span class='Cancelar col-md-4 btn btn-default pull-right'><span class='glyphicon glyphicon-remove-circle'>CANCELAR</span></span></div>";
+			
+			$(TableRow).appendTo("#AMUSuarios");
+			
+			$(".Cancelar").click(function(){
+				$("#AMUSuarios").html("");
+				});	
 			});	
 		});	
-		
+	
+	
 	
 	$('form').submit(function() {
 		event.preventDefault();
